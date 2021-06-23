@@ -4,4 +4,5 @@ This project predicts whether an employee will leave the job or not depending on
 Tech Stack:
 
 Frontend - HTML, CSS, Bootstrap
+
 Backend - Flask Framework(Python)
