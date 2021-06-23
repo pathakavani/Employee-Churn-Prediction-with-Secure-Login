@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <script type="text/javascript" src="/static/js/scripts.js"></script>
+
+</head>
+
+<body style="background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+"
+	
+	>
+    <title>Analytics</title>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Employee Churn Prediction </a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="{{ url_for('form') }}">Home</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="#">Analytics<span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div class="KDEplots">
+	<center><h2><b>Check out these graphs for better understanding of the data .</b></h2>
+	</center><br><br><hr><br>	
+	
+	<center><img src="/static/images/KDEplots.png"><h3>
+Bivariate density analysis on some fields</h3></center>
+		<hr class="someClass">
+
+
+		<center><img src="/static/images/plot1.png">
+<h3>It seems that EnvironmentSatisfaction, JobSatisfaction, PerformanceRating, and RelationshipSatisfaction features don't have big impact on the determination of Attrition of employees.</h3></center>
+		<hr class="someClass">
+		<center><img src="/static/images/plot2.png"><h3>We can see that the workers with low JobLevel, MonthlyIncome, YearAtCompany, and TotalWorkingYears are more likely to quit there jobs.
+</h3></center>
+		<hr class="someClass">
+		<center><img src="/static/images/plot3.png" width="1080" height="1080"><h3>The above correlation matrix represents the relation between all the attributes. </h3></center>
+		<hr class="someClass">
+		<center><img src="/static/images/plot4.png"></center>
+		<hr class="someClass">
+		<center><img src="/static/images/plot5.png"><h3>Analysis of correlation results (sample analysis):
+Monthly income is highly correlated with Job level. Job level is highly correlated with total working hours. Monthly income is highly correlated with total working hours. Age is also positively correlated with the Total working hours. Marital status and stock option level are negatively correlated</h3></center>
+		<hr class="someClass">
+		<center><img src="/static/images/plot6.png"></center>
+		<hr class="someClass">
+    <center><h3>The plots given below are interactive pie plots (Click on them for more detailed analysis)</h3></center>
+    <hr class="someClass">
+    <a href="/static/images/file.html"><center><img src="/static/images/newplot0.png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file1.html"><center><img src="/static/images/newplot.png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file2.html"><center><img src="/static/images/newplot (1).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file3.html"><center><img src="/static/images/newplot (2).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file4.html"><center><img src="/static/images/newplot (3).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file5.html"><center><img src="/static/images/newplot (4).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file6.html"><center><img src="/static/images/newplot (5).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file7.html"><center><img src="/static/images/newplot (6).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file8.html"><center><img src="/static/images/newplot (7).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file9.html"><center><img src="/static/images/newplot (8).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file10.html"><center><img src="/static/images/newplot (9).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file11.html"><center><img src="/static/images/newplot (10).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file12.html"><center><img src="/static/images/newplot (11).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file13.html"><center><img src="/static/images/newplot (12).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file14.html"><center><img src="/static/images/newplot (13).png"></center>
+    <hr class="someClass">
+    <a href="/static/images/file15.html"><center><img src="/static/images/newplot (14).png"></center>
+	</div>
+
+
+</body>
+</html>
+
